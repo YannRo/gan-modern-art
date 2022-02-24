@@ -133,5 +133,3 @@ dataset/*.jpeg
 dataset/*.png
 
 .DS_Store
-*.png
-*.gif
