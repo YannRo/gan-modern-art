@@ -1,18 +1,14 @@
-# Preview image Frame
 PREVIEW_ROWS: 4
 PREVIEW_COLS: 7
 PREVIEW_MARGIN: 4
-SAVE_FREQ: 20
+SAVE_FREQ: 500
 
-# Size vector to generate images from
 NOISE_SIZE: 100
 
-# Configuration
-EPOCHS: 1000
+EPOCHS: 100000
 BATCH_SIZE: 32
 GENERATE_RES: 3
-IMAGE_SIZE: 128 # rows/cols
+IMAGE_SIZE: 128
 IMAGE_CHANNELS: 3
 
-# Directory
-IMAGE_DIR: '../dataset/cubism/'
+IMAGE_DIR: 'dataset/cubism/'

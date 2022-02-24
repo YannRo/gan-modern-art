@@ -22,10 +22,10 @@ def save_images(cnt, noise,generator,config):
                         config.IMAGE_SIZE] = generated_images[image_count] * 255
             image_count += 1
     
-    output_path = 'output'
+    output_path = 'history/output'
     if not os.path.exists(output_path):
         os.makedirs(output_path)
     
-    filename = os.path.join(output_path, f"trained-{cnt}.png")
+    filename = os.path.join(output_path, f"trained_{cnt//1000}k{cnt%1000:03d}.png")
     im = Image.fromarray(image_array)
     im.save(filename)

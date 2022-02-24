@@ -64,6 +64,6 @@ def build_generator(config):
     
     input = Input(shape=(config.NOISE_SIZE))
     generated_image = model(input)
-    model.summary()
+    #model.summary()
     
     return Model(input, generated_image)

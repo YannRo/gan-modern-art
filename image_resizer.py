@@ -11,8 +11,6 @@ def resize():
 
     training_data = []
 
-    # Iterating over the images inside the directory and resizing them using
-    # Pillow's resize method.
     print('resizing...')
 
     for filename in os.listdir(images_path):
@@ -25,8 +23,9 @@ def resize():
         training_data, (-1, config.IMAGE_SIZE, config.IMAGE_SIZE, config.IMAGE_CHANNELS))
     training_data = training_data / 127.5 - 1
 
-    print('saving file...')
-    np.save('cubism_data.npy', training_data)
+    name_file = 'cubism_data.npy'
+    print(f'saving file at {os.getcwd()+name_file}')
+    np.save(name_file, training_data)
 
 if __name__=='__main__':
     resize()
