@@ -6,7 +6,6 @@ from tools.config import Config
 config = Config()
 
 def resize():
-    # Defining image dir path. Change this if you have different directory
     images_path = config.IMAGE_DIR +'images/'
 
     training_data = []
