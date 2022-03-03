@@ -4,3 +4,5 @@
 
 ## After some epochs
 ![history](history/trained_29k500.png)
+
+> Need some improvements ^^
