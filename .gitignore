@@ -133,3 +133,5 @@ dataset/*.jpeg
 dataset/*.png
 
 .DS_Store
+history/model
+history/output
